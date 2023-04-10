@@ -207,11 +207,11 @@ nav ul a:hover {
 
 .about {
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10rem;
+    padding: 3rem 10rem;
+    padding-bottom: 0;
     gap: 5rem;
 }
 
@@ -219,10 +219,14 @@ nav ul a:hover {
 .about .image {
     width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about .image img {
-    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .about .description {
@@ -233,17 +237,37 @@ nav ul a:hover {
 }
 
 .about .description h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--orange-color);
     text-transform: uppercase;
 }
 
 .about .description p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--gray-color);
     text-transform: none;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
+
+.about .description .ligne {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 2rem;
+    gap: 1rem;
+    list-style: none;
+}
+
+.about .description .ligne p {
+    font-size: 1.4rem;
+}
+
+.about .description .ligne i {
+    font-size: 1rem;
+    color: var(--orange-color);
+}
+
+
 
 /* about ends */
 
