@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
 
-:root{
+:root {
     /* colors */
     --white-color: #FFFFFF;
     --gray-color: #3e3e3f;
     --orange-color: #e6872d;
- }
- 
- *{
+}
+
+* {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
@@ -17,30 +17,30 @@
     border: none;
     text-transform: capitalize;
     transition: all .2s ease-out;
- }
+}
 
- a {
+a {
     color: var(--white-color);
     text-decoration: none;
     cursor: pointer;
- }
- 
- html{
+}
+
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
- }
+}
 
-  /* navBar starts */
+/* navBar starts */
 
- .Header{
+.Header {
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../images/intro-bg.jpg");
- }
+}
 
- nav {
+nav {
     width: 100vw;
     height: 7rem;
     display: flex;
@@ -54,36 +54,55 @@
     left: 0;
     z-index: 1000;
     transition: all .5s ease-in-out;
- }
+}
 
- .navBarColored {
+.navBarColored {
     background-color: var(--gray-color);
- }
+}
 
- nav .logo {
+nav .logo {
     font-size: 3rem;
- }
+}
 
- nav ul {
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
     gap: 2rem;
     font-size: 2rem;
- }
+}
 
- nav ul a {
+nav ul a {
     border: none;
     border-radius: .3rem;
     padding: 1rem;
- }
+}
 
- nav ul a:hover {
+nav ul a:hover {
     background-color: var(--orange-color);
- }
+}
 
- .heroSection {
+.menuBars {
+    display: none;
+}
+
+.bars i {
+    color: white;
+    font-size: 3.2rem;
+    cursor: pointer;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle:checked+nav ul {
+    right: 0;
+}
+
+
+.heroSection {
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -97,12 +116,12 @@
     gap: 1rem;
 }
 
-.heroSection h1{
+.heroSection h1 {
     color: var(--white-color);
     font-size: 8rem;
 }
 
-.heroSection h3{
+.heroSection h3 {
     color: var(--white-color);
     font-size: 5rem;
     background-color: var(--orange-color);
@@ -111,7 +130,7 @@
     border-radius: .5rem;
 }
 
-.heroSection h4{
+.heroSection h4 {
     color: var(--white-color);
     font-size: 2rem;
     font-weight: 300;
@@ -126,7 +145,7 @@
 .counterSection {
     width: 100vw;
     height: 50vh;
-    background-image: linear-gradient(rgba(230,135,45,0.9), rgba(230,135,45,0.95)), url("../images/counter.jpg");
+    background-image: linear-gradient(rgba(230, 135, 45, 0.9), rgba(230, 135, 45, 0.95)), url("../images/counter.jpg");
     padding: 10rem;
     display: flex;
     justify-content: center;
@@ -227,3 +246,120 @@
 }
 
 /* about ends */
+
+
+
+
+/* media queries */
+
+
+@media (max-width: 1250px) {
+
+    html {
+        font-size: 58%;
+    }
+
+    .Header {
+        width: 100%;
+    }
+
+    .navBar {
+        padding: 5rem 3rem;
+    }
+
+    nav .logo {
+        font-size: 2.3rem;
+    }
+
+    nav ul {
+        display: flex;
+        position: absolute;
+        right: -50%;
+        top: 10rem;
+        width: 50%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        position: absolute;
+        list-style: none;
+        background-color: var(--gray-color);
+        gap: 2rem;
+        font-size: 2rem;
+        padding: 3rem;
+    }
+
+    .menuBars {
+        display: block;
+    }
+
+    .heroSection h1 {
+        color: var(--white-color);
+        font-size: 5rem;
+    }
+
+    .counterSection {
+        padding: 0 3rem;
+    }
+
+    .counterSection .title h1 {
+        font-size: 3rem;
+    }
+
+    .counterSection .counter .case {
+        height: 12rem;
+        width: 10rem;
+        border: .2rem solid var(--white-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .counterSection .counter .case .text {
+        font-size: 1.6rem;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 0;
+        padding: 3rem;
+    }
+
+    .about .description,
+    .about .image {
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    .about .description h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 45%;
+    }
+}
