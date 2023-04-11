@@ -211,7 +211,6 @@ nav ul a:hover {
     justify-content: center;
     align-items: center;
     padding: 3rem 10rem;
-    padding-bottom: 0;
     gap: 5rem;
 }
 
@@ -267,9 +266,62 @@ nav ul a:hover {
     color: var(--orange-color);
 }
 
-
-
 /* about ends */
+
+/* programme starts */
+
+.programme {
+    width: 100vw;
+    display: flex;
+    padding: 3rem 10rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../images/programme.jpg");
+    background-position: center;
+}
+
+.programme .title h1 {
+    font-size: 4rem;
+    color: var(--orange-color);
+    text-transform: uppercase;
+}
+
+.programme .imageProgramme {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.programme .imageProgramme img {
+    width: 50%;
+}
+
+/* programme ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -346,6 +398,8 @@ nav ul a:hover {
 
     .about {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 0;
         padding: 3rem;
     }
@@ -360,6 +414,16 @@ nav ul a:hover {
     .about .description h1 {
         font-size: 3rem;
         text-align: center;
+    }
+
+    .programme {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem;
+    }
+
+    .programme .imageProgramme img {
+        width: 100%;
     }
 
 }
