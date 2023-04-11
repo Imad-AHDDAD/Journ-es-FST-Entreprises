@@ -304,8 +304,41 @@ nav ul a:hover {
 
 /* programme ends */
 
+/* contact starts */
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 5rem;
+    background-color: var(--gray-color);
+}
 
+.contact .title h1 {
+    font-size: 3rem;
+    color: var(--orange-color);
+    text-transform: uppercase;
+}
+
+.contact .itemsContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    font-size: 2rem;
+    gap: .8rem;
+    padding: 3rem;
+    background-color: var(--gray-color);
+}
+
+.contact .itemsContact span i {
+    margin-right: .5rem;
+}
+
+/* contact ends */
 
 
 
