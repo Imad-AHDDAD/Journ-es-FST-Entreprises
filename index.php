@@ -198,6 +198,47 @@
 
   <!-- programme ends -->
 
+  <!-- registration starts -->
+
+  <div class="registration">
+    <div class="title">
+      <h1>Formulaire d'inscription</h1>
+    </div>
+    <div class="formulaire">
+      <form action="" method="post">
+
+        <div class="sentence">
+          <h4>Merci de remplir ce formulaire</h4>
+        </div>
+
+        <div class="field">
+          <i class="fa-sharp fa-solid fa-user"></i>
+          <input type="text" name="name" id="name" placeholder="Votre nom">
+        </div>
+        <div class="field">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="text" name="email" id="email" placeholder="Votre email">
+        </div>
+        <div class="field">
+          <i class="fa-solid fa-building"></i>
+          <input type="text" name="etabl" id="etabl" placeholder="Votre établissement">
+        </div>
+        <div class="field">
+          <i class="fa-solid fa-building"></i>
+          <input type="text" name="etabl" id="etabl" placeholder="Votre établissement">
+        </div>
+
+        <div class="btns">
+          <button class="btn" id="btn-reset" type="reset">Réinitialiser</button>
+          <button class="btn" id="btn-send" type="submit">Envoyer</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- registration ends -->
+
   <!-- contact starts -->
   
   <div class="contact">
