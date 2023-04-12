@@ -19,6 +19,11 @@
 
 <body>
 
+  <!-- upButton -->
+  <div class="upButton" id="upBtn">
+    <i class="fa-solid fa-chevron-up"></i>
+  </div>
+
   <!-- header starts -->
 
   <div class="Header">

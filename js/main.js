@@ -2,11 +2,24 @@
 window.addEventListener("scroll", function () {
     var scroll = window.pageYOffset;
     var nav = document.getElementById("navBar");
+    var upBtn = this.document.getElementById("upBtn");
     if(scroll > 10){
         nav.classList.add("navBarColored");
     }else{
         nav.classList.remove("navBarColored");
     }
+
+    if(scroll > 50){
+        upBtn.classList.add("upBtnShow");
+    }else{
+        upBtn.classList.remove("upBtnShow");
+    }
+
+    upBtn.addEventListener("click", function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+
 });
 
 
