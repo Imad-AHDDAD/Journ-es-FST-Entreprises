@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,9 +12,7 @@
   <link rel="stylesheet" href="css/main.css">
 
   <!-- fontawesome link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -63,7 +62,7 @@
       <h1>Journées</h1>
       <h1>FST-Entreprises</h1>
       <h3>2023</h3>
-      <h4>Du 15 à 19 Mai 2023</h4>
+      <h4>Du 16 au 18 Mai 2023</h4>
     </div>
 
   </div>
@@ -205,32 +204,48 @@
 
   <!-- registration starts -->
 
-  <div class="registration">
+  <div class="registration" id="registration">
     <div class="title">
       <h1>Formulaire d'inscription</h1>
     </div>
     <div class="formulaire">
-      <form action="" method="post">
+      <form action="./controllers/register.php" id="registrationForm" method="post">
 
-        <div class="sentence">
+        <!-- <div class="sentence">
           <h4>Merci de remplir ce formulaire</h4>
-        </div>
+        </div> -->
+
+        <?php
+        if (isset($_SESSION['error'])) {
+          echo "<div class='errorMsg'>{$_SESSION['error']}</div>";
+          unset($_SESSION['error']);
+        }
+        if (isset($_SESSION['success'])) {
+          echo "<div class='successMsg'>{$_SESSION['success']}</div>";
+          unset($_SESSION['success']);
+        }
+        ?>
 
         <div class="field">
           <i class="fa-sharp fa-solid fa-user"></i>
-          <input type="text" name="name" id="name" placeholder="Votre nom">
+          <select name="type" id="type">
+            <option value="">Vous êtes ?</option>
+            <option value="entreprise">Entreprise</option>
+            <option value="société">Société</option>
+            <option value="lauréat">Lauréat</option>
+          </select>
+        </div>
+        <div class="field">
+          <i class="fa-sharp fa-solid fa-user"></i>
+          <input type="text" name="name" id="name" placeholder="Votre nom complet" required>
         </div>
         <div class="field">
           <i class="fa-solid fa-envelope"></i>
-          <input type="text" name="email" id="email" placeholder="Votre email">
+          <input type="text" name="email" id="email" placeholder="Votre email" required>
         </div>
         <div class="field">
-          <i class="fa-solid fa-building"></i>
-          <input type="text" name="etabl" id="etabl" placeholder="Votre établissement">
-        </div>
-        <div class="field">
-          <i class="fa-solid fa-building"></i>
-          <input type="text" name="etabl" id="etabl" placeholder="Votre établissement">
+          <i class="fa-solid fa-phone"></i>
+          <input type="tel" name="tel" id="tel" placeholder="Votre numéro de téléphone" required>
         </div>
 
         <div class="btns">
@@ -245,7 +260,7 @@
   <!-- registration ends -->
 
   <!-- contact starts -->
-  
+
   <div class="contact">
     <div class="title">
       <h1 class="title">CONTACTEZ NOUS !</h1>
