@@ -379,7 +379,7 @@ nav ul a:hover {
     color: var(--orange-color);
     text-align: center;
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .registration .formulaire .field {
@@ -400,10 +400,12 @@ nav ul a:hover {
     color: var(--gray-color);
 }
 
-.registration .formulaire .field input {
+.registration .formulaire .field input,
+.registration .formulaire .field select {
     font-size: 2rem;
     width: 100%;
     background-color: unset;
+    text-transform: none;
 }
 
 .btns {
@@ -428,16 +430,47 @@ nav ul a:hover {
     border-radius: .5rem;
     color: var(--white-color);
     font-size: 1.8rem;
+    cursor: pointer;
 }
 
-#btn-reset{
+#btn-reset {
     background-color: var(--gray-color);
 }
 
-#btn-send{
+#btn-send {
     background-color: var(--orange-color);
+    transition: all .5s ease-in-out;
 }
 
+#btn-send:hover {
+    background-color: unset;
+    border: .15rem solid var(--orange-color);
+    color: var(--gray-color);
+}
+
+#btn-reset:hover {
+    background-color: unset;
+    border: .15rem solid var(--gray-color);
+    color: var(--gray-color);
+}
+
+.errorMsg {
+    font-size: small;
+    background-color: #ff7979;
+    color: #ffffff;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.successMsg {
+    font-size: small;
+    background-color: #2ecc71;
+    color: #ffffff;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
 
 /* registration ends */
 
@@ -612,7 +645,7 @@ nav ul a:hover {
         width: 5rem;
         height: 5rem;
     }
-    
+
     .upButton i {
         color: var(--white-color);
         font-size: 2.5rem;

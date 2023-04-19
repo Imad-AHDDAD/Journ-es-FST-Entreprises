@@ -47,3 +47,10 @@ let counter = setInterval(() => {
 
 }, 1000);
 
+// reset form on click on reset btn
+var form = document.getElementById("registrationForm");
+var resetBtn = document.getElementById("btn-reset");
+resetBtn.addEventListener("click", function(){
+    form.reset();
+});
+
