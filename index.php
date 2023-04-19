@@ -25,7 +25,7 @@
 
   <!-- header starts -->
 
-  <div class="Header">
+  <div class="Header" id="particle-canvas">
 
     <input type="checkbox" name="nav-toggle" id="nav-toggle">
     <nav class="navBar" id="navBar">
@@ -59,10 +59,12 @@
     </nav>
 
     <div class="heroSection">
-      <h1>Journées</h1>
-      <h1>FST-Entreprises</h1>
-      <h3>2023</h3>
-      <h4>Du 16 au 18 Mai 2023</h4>
+      <div class="content">
+        <h1>Journées</h1>
+        <h1>FST-Entreprises</h1>
+        <h3>2023</h3>
+        <h4>Du 16 au 18 Mai 2023</h4>
+      </div>
     </div>
 
   </div>
@@ -276,6 +278,7 @@
 
   <!-- javaScript -->
   <script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
 
 
 </body>
