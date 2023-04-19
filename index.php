@@ -25,7 +25,7 @@
 
   <!-- header starts -->
 
-  <div class="Header" id="particle-canvas">
+  <div class="Header" id="acceuil">
 
     <input type="checkbox" name="nav-toggle" id="nav-toggle">
     <nav class="navBar" id="navBar">
@@ -34,19 +34,19 @@
       </div>
       <div class="menu">
         <ul>
-          <a href="">
+          <a href="#acceuil">
             <li>Acceuil</li>
           </a>
-          <a href="">
+          <a href="#a_propos">
             <li>A propos</li>
           </a>
-          <a href="">
+          <a href="#programme">
             <li>Programme</li>
           </a>
           <a href="">
             <li>Sponsors</li>
           </a>
-          <a href="">
+          <a href="#contact">
             <li>Contact</li>
           </a>
         </ul>
@@ -64,6 +64,11 @@
         <h1>FST-Entreprises</h1>
         <h3>2023</h3>
         <h4>Du 16 au 18 Mai 2023</h4>
+        <div class="address">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <h4>La Faculté des Sciences et Techniques Guéliz</h4>
+          <h4>La Cité d'Innovation de Marrakech</h4>
+        </div>
       </div>
     </div>
 
@@ -117,7 +122,7 @@
 
   <!-- about starts -->
 
-  <div class="about">
+  <div class="about" id="a_propos">
     <div class="description">
       <h1>A propos</h1>
       <h1>de l'événement</h1>
@@ -192,7 +197,7 @@
 
   <!-- programme starts -->
 
-  <div class="programme">
+  <div class="programme" id="programme">
     <div class="title">
       <h1 class="title">PROGRAMME</h1>
     </div>
@@ -263,7 +268,7 @@
 
   <!-- contact starts -->
 
-  <div class="contact">
+  <div class="contact" id="contact">
     <div class="title">
       <h1 class="title">CONTACTEZ NOUS !</h1>
     </div>
