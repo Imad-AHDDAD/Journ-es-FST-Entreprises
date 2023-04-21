@@ -24,7 +24,7 @@ window.addEventListener("scroll", function () {
 
 
 // set up le downCounter
-let countDownDate = new Date("May 14, 2023 23:59:59").getTime();
+let countDownDate = new Date("May 15, 2023 23:59:59").getTime();
 
 let counter = setInterval(() => {
 
