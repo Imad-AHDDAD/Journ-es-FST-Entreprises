@@ -1,21 +1,26 @@
+window.addEventListener('load', function () {
+    var loading = document.getElementById('loader-container');
+    loading.style.display = 'none';
+});
+
 // change navBar color when scorll starts
 window.addEventListener("scroll", function () {
     var scroll = window.pageYOffset;
     var nav = document.getElementById("navBar");
     var upBtn = this.document.getElementById("upBtn");
-    if(scroll > 10){
+    if (scroll > 10) {
         nav.classList.add("navBarColored");
-    }else{
+    } else {
         nav.classList.remove("navBarColored");
     }
 
-    if(scroll > 50){
+    if (scroll > 50) {
         upBtn.classList.add("upBtnShow");
-    }else{
+    } else {
         upBtn.classList.remove("upBtnShow");
     }
 
-    upBtn.addEventListener("click", function() {
+    upBtn.addEventListener("click", function () {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     });
@@ -34,14 +39,14 @@ let counter = setInterval(() => {
     let days = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
     let hours = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((dateDiff % (1000 * 60))/1000);
+    let seconds = Math.floor((dateDiff % (1000 * 60)) / 1000);
 
-    document.getElementById("daysNum").innerHTML = days < 10 ? `0${days}`: days;
-    document.getElementById("hoursNum").innerHTML = hours < 10 ? `0${hours}`: hours;
-    document.getElementById("minsNum").innerHTML = minutes < 10 ? `0${minutes}`: minutes;
-    document.getElementById("secsNum").innerHTML = seconds < 10 ? `0${seconds}`: seconds;
+    document.getElementById("daysNum").innerHTML = days < 10 ? `0${days}` : days;
+    document.getElementById("hoursNum").innerHTML = hours < 10 ? `0${hours}` : hours;
+    document.getElementById("minsNum").innerHTML = minutes < 10 ? `0${minutes}` : minutes;
+    document.getElementById("secsNum").innerHTML = seconds < 10 ? `0${seconds}` : seconds;
 
-    if(dateDiff < 0) {
+    if (dateDiff < 0) {
         clearInterval(counter);
     }
 
@@ -50,7 +55,7 @@ let counter = setInterval(() => {
 // reset form on click on reset btn
 var form = document.getElementById("registrationForm");
 var resetBtn = document.getElementById("btn-reset");
-resetBtn.addEventListener("click", function(){
+resetBtn.addEventListener("click", function () {
     form.reset();
 });
 

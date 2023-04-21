@@ -18,9 +18,15 @@
 
 <body>
 
-  <!-- upButton -->
+  <!-- upButton starts -->
   <div class="upButton" id="upBtn">
     <i class="fa-solid fa-chevron-up"></i>
+  </div>
+  <!-- upButton ends -->
+
+  <!-- loader div -->
+  <div class="loader-container" id="loader-container">
+    <div class="loader"></div>
   </div>
 
   <!-- header starts -->
