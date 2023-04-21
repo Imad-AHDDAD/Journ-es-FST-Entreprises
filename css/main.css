@@ -588,6 +588,22 @@ nav ul a:hover {
 /* contact ends */
 
 
+/* custom scrollbar starts */
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--orange-color);
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+/* custom scrollbar ends */
 
 
 

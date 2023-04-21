@@ -61,7 +61,7 @@
     <div class="heroSection">
       <div class="content">
         <h1>Journées</h1>
-        <h1>FST-Entreprises</h1>
+        <h1>FSTG-Entreprises</h1>
         <h3>2023</h3>
         <h4>Du 16 au 18 Mai 2023</h4>
         <!-- <div class="address">
