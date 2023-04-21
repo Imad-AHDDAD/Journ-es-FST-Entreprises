@@ -30,7 +30,7 @@
     <input type="checkbox" name="nav-toggle" id="nav-toggle">
     <nav class="navBar" id="navBar">
       <div class="logo">
-        <h2>LOGO</h2>
+        <img src="images/logo-01.png" alt="logo">
       </div>
       <div class="menu">
         <ul>
