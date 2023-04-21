@@ -64,10 +64,14 @@
         <h1>FST-Entreprises</h1>
         <h3>2023</h3>
         <h4>Du 16 au 18 Mai 2023</h4>
-        <div class="address">
+        <!-- <div class="address">
           <i class="fa-solid fa-map-location-dot"></i>
           <h4>La Faculté des Sciences et Techniques Guéliz</h4>
           <h4>La Cité d'Innovation de Marrakech</h4>
+        </div> -->
+        <div class="register-button">
+          <a href="#registration"><i class="fa-solid fa-chevron-down"></i></a>
+          <h4>S'inscrire</h4>
         </div>
       </div>
     </div>
