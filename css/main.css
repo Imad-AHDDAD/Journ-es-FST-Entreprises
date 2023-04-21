@@ -36,6 +36,57 @@ body {
     position: relative;
 }
 
+/* loader starts */
+
+.hideLoder{
+    display: none;
+}
+
+.loader-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 4000;
+    background-color: var(--gray-color);
+}
+
+.loader {
+    border: .7rem solid var(--white-color);
+    border-radius: 50%;
+    border-top: .7rem solid var(--orange-color);
+    width: 5rem;
+    height: 5rem;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* loader ends */
+
+/* upButton starts */
+
 .upButton {
     width: 6rem;
     height: 6rem;
@@ -59,6 +110,8 @@ body {
 .upBtnShow {
     right: 2rem;
 }
+
+/* upButton ends */
 
 /* navBar starts */
 
@@ -603,6 +656,7 @@ nav ul a:hover {
     border-radius: 3rem;
     cursor: pointer;
 }
+
 /* custom scrollbar ends */
 
 
@@ -672,9 +726,9 @@ nav ul a:hover {
         display: block;
     }
 
-    .heroSection h1 {
+    .heroSection h1, .heroSection h3 {
         color: var(--white-color);
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .counterSection {
