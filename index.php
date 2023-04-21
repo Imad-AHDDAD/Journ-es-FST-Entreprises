@@ -277,9 +277,8 @@
       <h1 class="title">CONTACTEZ NOUS !</h1>
     </div>
     <div class="itemsContact">
-      <span class="tel tel1"> <i class="fa-solid fa-phone"></i> +212 524 43 34 04</span>
-      <span class="tel tel2"> <i class="fa-solid fa-phone"></i> +212 524 43 31 70</span>
-      <span class="mail"><a href="mailto:JP-FSTG-2023@gmail.com"> <i class="fa-solid fa-envelope"></i> JP-FSTG-2023@gmail.com</a></span>
+      <span class="tel tel1"> <i class="fa-solid fa-phone"></i> +212 670 098 888</span>
+      <span class="mail"><a href="mailto:manifestation-fstg.contact@uca.ac.ma"> <i class="fa-solid fa-envelope"></i> manifestation-fstg.contact@uca.ac.ma</a></span>
     </div>
   </div>
 
