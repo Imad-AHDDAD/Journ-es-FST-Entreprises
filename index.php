@@ -36,25 +36,15 @@
     <input type="checkbox" name="nav-toggle" id="nav-toggle">
     <nav class="navBar" id="navBar">
       <div class="logo">
-        <img src="images/logo-01.png" alt="logo">
+        <img src="images/logo-01.png" id="logo" alt="logo">
       </div>
       <div class="menu">
         <ul>
-          <a href="#acceuil">
-            <li>Acceuil</li>
-          </a>
-          <a href="#a_propos">
-            <li>A propos</li>
-          </a>
-          <a href="#programme">
-            <li>Programme</li>
-          </a>
-          <a href="">
-            <li>Sponsors</li>
-          </a>
-          <a href="#contact">
-            <li>Contact</li>
-          </a>
+          <li id="acceuil_btn">Acceuil</li>
+          <li id="a_propos_btn">A propos</li>
+          <li id="programme_btn">Programme</li>
+          <li id="sponsors_btn">Sponsors</li>
+          <li id="contact_btn">Contact</li>
         </ul>
       </div>
       <div class="menuBars">
@@ -75,8 +65,8 @@
           <h4>La Faculté des Sciences et Techniques Guéliz</h4>
           <h4>La Cité d'Innovation de Marrakech</h4>
         </div> -->
-        <div class="register-button">
-          <a href="#registration"><i class="fa-solid fa-chevron-down"></i></a>
+        <div class="register-button" id="register_btn">
+          <i class="fa-solid fa-chevron-down"></i>
           <h4>S'inscrire</h4>
         </div>
       </div>
@@ -245,7 +235,7 @@
 
         <div class="field">
           <i class="fa-sharp fa-solid fa-user"></i>
-          <select name="type" id="type">
+          <select name="type" id="type" required>
             <option value="">Vous êtes ?</option>
             <option value="entreprise">Entreprise</option>
             <option value="société">Société</option>
@@ -292,7 +282,9 @@
 
   <!-- javaScript -->
   <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
   <script src="js/animation.js"></script>
+  
 
 
 </body>

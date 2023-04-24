@@ -4,15 +4,26 @@ window.addEventListener('load', function () {
 });
 
 // change navBar color when scorll starts
+var prevScrollpos = window.pageYOffset;
 window.addEventListener("scroll", function () {
     var scroll = window.pageYOffset;
     var nav = document.getElementById("navBar");
-    var upBtn = this.document.getElementById("upBtn");
     if (scroll > 10) {
         nav.classList.add("navBarColored");
+        nav.classList.add("invisible");
     } else {
         nav.classList.remove("navBarColored");
+        nav.classList.remove("invisible");
     }
+
+    if (prevScrollpos > scroll) {
+        nav.classList.add("visible");
+        nav.classList.remove("invisible");
+    } else {
+        nav.classList.remove("visible");
+    }
+    
+    prevScrollpos = scroll;
 
     if (scroll > 50) {
         upBtn.classList.add("upBtnShow");
@@ -20,17 +31,11 @@ window.addEventListener("scroll", function () {
         upBtn.classList.remove("upBtnShow");
     }
 
-    upBtn.addEventListener("click", function () {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    });
-
 });
 
 
 // set up le downCounter
 let countDownDate = new Date("May 15, 2023 23:59:59").getTime();
-
 let counter = setInterval(() => {
 
     let dateNow = new Date().getTime();
