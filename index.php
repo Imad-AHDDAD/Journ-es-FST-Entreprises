@@ -202,7 +202,7 @@
       <h1 class="title">PROGRAMME</h1>
     </div>
     <div class="imageProgramme">
-      <img src="images/programme5-02.svg" alt="programme">
+      <img src="images/programme_final-01.svg" alt="programme">
     </div>
 
   </div>

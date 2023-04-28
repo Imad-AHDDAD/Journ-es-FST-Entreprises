@@ -370,10 +370,12 @@ nav ul li:hover {
 
 .about {
     width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3rem 10rem;
+    padding-bottom: 0;
     gap: 5rem;
 }
 
@@ -382,7 +384,11 @@ nav ul li:hover {
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: center;
+}
+
+.about .image {
+    flex-direction: column;
+    justify-content: end;
     align-items: center;
 }
 
@@ -392,7 +398,6 @@ nav ul li:hover {
 }
 
 .about .description {
-    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
@@ -442,7 +447,7 @@ nav ul li:hover {
     align-items: center;
     gap: 2rem;
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("../images/programme.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/time3.png");
     background-position: center;
 }
 
@@ -568,7 +573,7 @@ nav ul li:hover {
     color: var(--gray-color);
 }
 
-.card:hover .workshopTitle{
+.card:hover .workshopTitle {
     background-size: auto;
 }
 
@@ -877,11 +882,13 @@ nav ul li:hover {
     }
 
     .about {
+        height: auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 0;
         padding: 3rem;
+        padding-bottom: 0;
     }
 
     .about .description,
