@@ -43,7 +43,7 @@
           <li id="acceuil_btn">Acceuil</li>
           <li id="a_propos_btn">A propos</li>
           <li id="programme_btn">Programme</li>
-          <li id="sponsors_btn">Sponsors</li>
+          <li id="workshops_btn">Workshops</li>
           <li id="contact_btn">Contact</li>
         </ul>
       </div>
@@ -209,6 +209,133 @@
 
   <!-- programme ends -->
 
+  <!-- Workshops starts -->
+
+  <div class="workshops" id="workshops">
+    <div class="title">
+      <h1>WORKSHOPS</h1>
+    </div>
+    <div class="container">
+
+      <div class="card">
+        <div class="workshopTitle" id="workshop1">
+          <h2>Workshop 1</h2>
+        </div>
+        <div class="workshopDescription">
+          <p>Quelles Compétences Informatiques pour les Métiers du Numérique?</p>
+        </div>
+        <div class="infos">
+          <div class="date">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h3>16 Mai 2023</h3>
+          </div>
+          <div class="heure">
+            <i class="fa-solid fa-clock"></i>
+            <h3>15h - 18h</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="workshopTitle" id="workshop2">
+          <h2>Workshop 2</h2>
+        </div>
+        <div class="workshopDescription">
+          <p>Pour une formation scientifique plurielle au service de l'Entreprise performante</p>
+        </div>
+        <div class="infos">
+          <div class="date">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h3>17 Mai 2023</h3>
+          </div>
+          <div class="heure">
+            <i class="fa-solid fa-clock"></i>
+            <h3>09h - 12h</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="workshopTitle" id="workshop3">
+          <h2>Workshop 3</h2>
+        </div>
+        <div class="workshopDescription">
+          <p>Les Data sciences au service de l'actuariat et de la finance</p>
+        </div>
+        <div class="infos">
+          <div class="date">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h3>17 Mai 2023</h3>
+          </div>
+          <div class="heure">
+            <i class="fa-solid fa-clock"></i>
+            <h3>15h - 18h</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="workshopTitle" id="workshop4">
+          <h2>Workshop 4</h2>
+        </div>
+        <div class="workshopDescription">
+          <p>Les initiatives de la filière d'ingénieurs "Industrie et sécurité des aliments" (ISA) pour une meilleure inclusion socio-économique des lauréats</p>
+        </div>
+        <div class="infos">
+          <div class="date">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h3>18 Mai 2023</h3>
+          </div>
+          <div class="heure">
+            <i class="fa-solid fa-clock"></i>
+            <h3>09h - 12h</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="workshopTitle" id="workshop5">
+          <h2>Workshop 5</h2>
+        </div>
+        <div class="workshopDescription">
+          <p>La chimie écologique au service des Entreprises</p>
+        </div>
+        <div class="infos">
+          <div class="date">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h3>18 Mai 2023</h3>
+          </div>
+          <div class="heure">
+            <i class="fa-solid fa-clock"></i>
+            <h3>09h - 12h</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="workshopTitle" id="workshop6">
+          <h2>Workshop 6</h2>
+        </div>
+        <div class="workshopDescription">
+          <p>Génie civil :  innovation et environnement</p>
+        </div>
+        <div class="infos">
+          <div class="date">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h3>18 Mai 2023</h3>
+          </div>
+          <div class="heure">
+            <i class="fa-solid fa-clock"></i>
+            <h3>15h - 18h</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Workshops ends -->
+
   <!-- registration starts -->
 
   <div class="registration" id="registration">
@@ -284,7 +411,7 @@
   <script src="js/main.js"></script>
   <script src="js/navigation.js"></script>
   <script src="js/animation.js"></script>
-  
+
 
 
 </body>
